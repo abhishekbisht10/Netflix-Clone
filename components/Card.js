@@ -21,7 +21,7 @@ function Card({navigation, route}) {
         async function getUrl() {
 
           let trailer = movie.media_type === 'movie' ? `movie/${movie.id}` : `tv/${movie.id}`;
-          let req = await axios.get(`${trailer}+/videos?api_key=fcc6b8d441cf2951fc42721fea4aacd7`)
+          let req = await axios.get(`${trailer}+/videos?api_key=`)
           setUrl(req.data.results[0].key)
 
         }    
